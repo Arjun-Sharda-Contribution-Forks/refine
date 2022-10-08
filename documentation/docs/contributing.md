@@ -9,7 +9,7 @@ We follow a [code of conduct][code_of_conduct] when participating in the refine 
 -   If you plan to work on a new feature, create an issue and discuss it with other community members/maintainers.
 -   Ask for help in our [discord community][discord channel].
 
-## Running in development mode
+## Starting in development mode
 
 `node` version 16 is required.
 
@@ -27,7 +27,7 @@ From now on, depending on the packages you plan to work on, (they are located un
 
 [Refer to **lerna** docs to learn more about `lerna bootstrap`. &#8594][lerna bootstrap]
 
-### Starting the packages you work in watch mode
+### Starting the packages you work with in watch mode
 
 You can either bootstrap all packages or only the packages you plan to work on.
 
