@@ -3,11 +3,11 @@ id: contributing
 title: Contributing
 ---
 
-We follow a [code of conduct][code_of_conduct] when participating in the community. Please read it before you make any contributions.
+We follow a [code of conduct][code_of_conduct] when participating in the refine community. Please read it before you make any contributions towards refine.
 
--   If you plan to work on an issue, mention so in the issue page before you start working on it.
+-   If you plan to work on an issue, mention so on the issue before you start working on it.
 -   If you plan to work on a new feature, create an issue and discuss it with other community members/maintainers.
--   Ask for help in our [community room][discord channel].
+-   Ask for help in our [discord community][discord channel].
 
 ## Running in development mode
 
@@ -21,7 +21,7 @@ First, install dependencies:
 npm install
 ```
 
-From now on, depending on the packages you plan to work on, (they are located under `packages/` and `examples/` directories - see [lerna.json][lerna.json]) you will need to bootstrap them and start them in watch mode. Instead of running `lerna bootstrap` directly, read on to see how **refine** team handles it.
+From now on, depending on the packages you plan to work on, (they are located under `packages/` and `examples/` directories - see [lerna.json][lerna.json]) you will need to bootstrap them and run them in watch mode. Instead of running `lerna bootstrap` directly, read on to see how the **refine** team handles it.
 
 [Refer to **lerna** docs to learn more about it. &#8594][lerna]
 
@@ -54,11 +54,11 @@ npm run build
 npm run start -- --scope @pankod/refine-core --scope @pankod/refine-antd --scope refine-use-select-example
 ```
 
-This command starts the example named `refine-use-select-example` in dev mode. The value of the flag `--scope` is the name that is defined in it's `package.json` file. Note that `--scope` flag should be used for every package that should be filtered. If you should start two packages:
+This command starts the example named `refine-use-select-example` in development mode. The value of the flag `--scope` is the name that is defined in it's `package.json` file. Note that `--scope` flag should be used for every package that should be filtered. If you should start two packages:
 
 Now all filtered packages are running in watch mode. They should re-compile when you make a change in any of them.
 
-### Starting documentation in watch mode
+### Start documentation in watch mode
 
 Our documentation is built with [Docusaurus][docusaurus]. To start it in development mode, run:
 
@@ -68,9 +68,9 @@ npm install
 npm run start
 ```
 
-## Running tests
+## tests
 
-`npm run test` command runs tests for all packages. If you're working on a package (e.g. `/packages/core`), you can run tests only for that package:
+`npm run test` command runs tests for all packages. If you're working on a package (e.g. `/packages/core`), you can run tests specifically for that package:
 
 ```bash
 cd packages/core
@@ -89,7 +89,7 @@ Also, to run a specific file's tests in watch mode:
 npm run test -- --watch /src/hooks/export/index.spec.ts
 ```
 
-Get coverage report for that file:
+Get a coverage report for a specific file:
 
 ```bash
 npm run test -- --coverage /src/hooks/export/index.spec.ts
